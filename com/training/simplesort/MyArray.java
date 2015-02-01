@@ -77,6 +77,32 @@ class MyArray {
             }
         }
 
+    }
 
+    public void oddEvenSort() {
+        int nElems = array.length;
+
+        for(int i = 0; i < nElems; i ++)
+        {
+            for(int j=0; j < nElems-1; j+=2)
+            {
+                if(array[j]>array[j+1])
+                {
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                }
+            }
+
+            for(int j=1; j < nElems-1; j+=2)
+            {
+                if(array[j]>array[j+1])
+                {
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                }
+            }
+        }
     }
 }

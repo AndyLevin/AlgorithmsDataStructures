@@ -18,6 +18,7 @@ class SortApp {
             System.out.println("  1 - Bubble sort");
             System.out.println("  2 - Selection sort");
             System.out.println("  3 - Insertion sort");
+            System.out.println("  4 - Odd Even sort");
 
             int number = sc.nextInt();
             switch (number) {
@@ -29,6 +30,9 @@ class SortApp {
                     break;
                 case (3):
                     a.insertionSort();
+                    break;
+                case (4):
+                    a.oddEvenSort();
                     break;
                 default:
                     System.out.println("# Wrong input");
