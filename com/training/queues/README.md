@@ -1,0 +1,1 @@
+# Simple model of queue in supermarket
